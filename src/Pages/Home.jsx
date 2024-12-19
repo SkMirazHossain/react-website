@@ -8,7 +8,7 @@ export const Home = () => {
 
   return (
     <h1>
-      Hello, This is Home <Link to="/about">click</Link>
+      Hello, This is The Home <Link to="/about">click</Link>
     </h1>
   );
 };
