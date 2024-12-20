@@ -4,6 +4,7 @@ import { About } from "./Pages/About";
 import { AppLayout } from "./AppLayout";
 import { Contact } from "./Pages/Contact";
 import { AboutInnerPage } from "./Pages/AboutInnerPage";
+import "./App.css";
 
 export const App = () => {
   const router = createBrowserRouter([
