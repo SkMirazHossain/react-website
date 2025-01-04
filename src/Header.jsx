@@ -8,6 +8,7 @@ export const Header = ()=>{
           <nav>
             <NavLink to="/" end style={{ marginRight: "1rem" }}>Home</NavLink>
             <NavLink to="/about" end style={{ marginRight: "1rem" }}>About</NavLink>
+            <NavLink to="/movies" end style={{ marginRight: "1rem" }}>Movies</NavLink>
             <NavLink to="/contact" end>Contact</NavLink>
           </nav>
         </header>

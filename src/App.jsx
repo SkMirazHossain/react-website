@@ -3,7 +3,9 @@ import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
 import { AppLayout } from "./AppLayout";
 import { Contact } from "./Pages/Contact";
+import { Movie } from "./Pages/Movies";
 import { AboutInnerPage } from "./Pages/AboutInnerPage";
+import { movieList } from "./api/MovieList";
 import "./App.css";
 
 export const App = () => {
@@ -19,6 +21,11 @@ export const App = () => {
         {
           path: "/about",
           element: <About />,
+        },
+        {
+          path: "/movies",
+          element: <Movie />,
+          loader: movieList,
         },
         {
           path: "/about/inner",
