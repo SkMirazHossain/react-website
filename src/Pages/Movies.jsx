@@ -97,7 +97,7 @@ export const Movie = () => {
           onClick={() => handlePageChange(page - 1)}
           disabled={page === 1}
         >
-          Previous
+          Previous 
         </button>
         <span>
           Page {page} of {totalPages}
@@ -106,7 +106,7 @@ export const Movie = () => {
           onClick={() => handlePageChange(page + 1)}
           disabled={page === totalPages}
         >
-          Next
+           Next
         </button>
       </div>
     </>

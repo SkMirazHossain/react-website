@@ -22,7 +22,7 @@ export const movieList = async ({ request }) => {
   
   try {
     const response = await fetch(
-      `https://www.omdbapi.com/?i=tt3896198&apikey=b2880005&s=${query}&page=${page}`
+      `https://www.omdbapi.com/?apikey=b2880005&s=${query}&page=${page}`
     );
     const data = await response.json();
     return data; // Return the fetched data directly

@@ -18,13 +18,14 @@ After this, you can directly use Poster and imdbID in the component instead of w
 
 */
   }
-  const { Poster, imdbID,Title } = curMovie;
+  const { Poster, imdbID,Title,Year,Type } = curMovie;
   return (
     <li className="hero-container">
       <div className="main-container">
         <div className="poster-container">
           <img src={Poster} className="poster" alt={imdbID} />
-          <h3><a href={`https://www.google.com/search?q=${encodeURIComponent(Title)}`} target="_blank">{Title}</a></h3>
+          <h3><a href={`https://www.google.com/search?q=${encodeURIComponent(Title)}`} target="_blank">{Title} ({Year})</a></h3>
+          <p>Type: <b>{Type}</b></p>
         </div>
         <div className="ticket-container">
           <div className="ticket__content">
