@@ -23,8 +23,9 @@ After this, you can directly use Poster and imdbID in the component instead of w
     <li className="hero-container">
       <div className="main-container">
         <div className="poster-container">
+        <a href={`https://www.google.com/search?q=${encodeURIComponent(Title)}`} target="_blank">
           <img src={Poster} className="poster" alt={imdbID} />
-          <h3><a href={`https://www.google.com/search?q=${encodeURIComponent(Title)}`} target="_blank">{Title} ({Year})</a></h3>
+          <h3>{Title} ({Year})</h3></a>
           <p>Type: <b>{Type}</b></p>
         </div>
         <div className="ticket-container">
